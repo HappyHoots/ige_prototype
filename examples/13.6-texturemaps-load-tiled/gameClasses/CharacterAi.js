@@ -6,7 +6,7 @@ var CharacterAi = Character.extend({
 		var self = this,
 			newPathMethod;
 
-		this._super();
+		IgeEntity.prototype.init.call(this);
 
 		this.pathFinder = pathFinder;
 		this.collisionMap = collisionMap;
